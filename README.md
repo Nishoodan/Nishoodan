@@ -1,10 +1,32 @@
-- 👋 Hi, I’m @Nishoodan
-- 👀 I’m interested in AI and machine learning
-- 🌱 I’m currently learning in college
-- 💞️ I’m looking to collaborate on developing AI skills
+## R Calculator 
 
+Here’s a simple R calculator that performs basic arithmetic operations:
 
-<!---
-Nishoodan/Nishoodan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+```r
+# Simple R Calculator
+
+add <- function(x, y) {
+  return(x + y)
+}
+
+subtract <- function(x, y) {
+  return(x - y)
+}
+
+multiply <- function(x, y) {
+  return(x * y)
+}
+
+divide <- function(x, y) {
+  if(y == 0) {
+    return("Division by zero is not allowed")
+  } else {
+    return(x / y)
+  }
+}
+
+# Example usage
+add(10, 5)        # Returns 15
+subtract(10, 5)   # Returns 5
+multiply(10, 5)   # Returns 50
+divide(10, 5)     # Returns 2
